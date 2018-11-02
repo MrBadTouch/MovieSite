@@ -1,0 +1,764 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+html {
+	font-size: 15px;
+}
+
+.container {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: .8;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+button, input {
+	border-radius: 4px;
+	border-style: none;
+}
+
+.red-btn {
+	text-transform: uppercase;
+	padding: 7px 30px;
+	color: #fff;
+	background-color: #e30813;
+}
+
+.yellow-btn {
+	padding: 7px 30px;
+	color: #fff;
+	background-color: #e39e08;
+}
+
+button:hover, .spec-list li:hover {
+	filter: brightness(70%);
+	cursor: pointer;
+}
+
+span {
+	font-weight: 700;
+}
+
+/*HEADER STYLES*/
+header {
+	background-color: #1d1d1d;
+}
+
+.logo {
+	width: 181px;
+	height: 148px;
+	background: url(../img/logo.png) no-repeat center;
+}
+
+.nav-flex {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-flex .top-list {
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	color: #fff;
+}
+
+.top-nav {
+	height: 148px;
+}
+
+.color-panel {
+	height: 30px;
+}
+
+.nav-position {
+	position: relative;
+}
+
+header nav {
+	height: 58px;
+	width: 100%;
+	background-color: #e39e08;
+	/*position: absolute;*/
+}
+
+.bottom-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.bottom-list li {
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #e39e08;
+}
+
+.nav-flex button {
+	font-weight: 700;
+}
+
+.nav-flex li:hover {
+	opacity: 0.7;
+}
+
+.search input {
+	width: 120px;
+	height: 72px;
+	background-color: #252525;
+	color: #8b8b8b;
+	padding-left: 10px;
+}
+
+.search {
+	display: flex;
+}
+
+.zoom {
+	background: url(../img/zoom-out.png) no-repeat center;
+	background-color: #252525;
+	height: 72px;
+	width: 50px;
+	cursor: pointer;
+	margin-left: -6px;
+	border-radius: 4px;
+}
+
+/*SECTION BANNER*/
+
+.banner {
+	/*height: 366px;*/
+	background: url(../img/justice-league-cast-large.png) no-repeat center;
+}
+
+.banner-flex {
+	height: 366px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	color: #fff;
+}
+
+.banner-flex h1 {
+	margin: 10px 0;
+}
+
+.banner p {
+	font-weight: 300;
+	margin: 10px 0;
+}
+
+.banner-flex button {
+	background-color: #e39e08;
+	color: #0f0f0f;
+	padding: 18px 25px;
+	margin: 10px 0;
+	font-weight: 300;
+}
+
+/*.banner-flex > * {
+	margin: 20px;
+}*/
+
+/*SPRAWDZIC CZY DA SIĘ ZAKODOWAĆ MARGINES DLA WSZYSTKICH ELEMENTÓW W ŚRODKU*/
+
+/*SECTION NICE MOVIES*/
+
+.nice-movies {
+	margin-bottom: 70px;
+}
+
+.nice-movies-header {
+	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
+	height: 100px;
+}
+
+.nice-movies-header button {
+	padding: 7px 25px;
+	margin-left: 30px;
+}
+
+.nice-movies-flex {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.nice-movies-single-photo {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.nice-movies-photo {
+	width: 230px;
+	height: 300px;
+	background: url(../img/power-rangers-movie-cast.png) no-repeat center/contain;
+	margin-bottom: 20px;
+}
+
+.stars-container {
+	padding: 10px;
+}
+
+.stars-container p {
+	color: #fff;
+}
+
+.nice-movies-single-photo > p {
+	font-weight: 300;
+	color: #7b7b7b;
+	text-transform: uppercase;
+}
+
+.nice-movies-single-photo button {
+	margin: 15px 0;
+	text-transform: lowercase;
+}
+
+/*SECTION DOUBLE-BOX*/
+
+.double-box-main {
+	background-color: #1d1d1d;
+	height: 650px;
+}
+
+.double-box-main-flex {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	background-color: #1d1d1d;
+}
+
+.double-box-header {
+	height: 90px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.double-box-header button {
+	margin-left: 15px;
+}
+
+.double-box-left {
+	width: 47%;
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-1-3 {
+	height: 170px;
+	border-bottom: 1px #333333 solid;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-1-3 div:nth-child(2) {
+	padding-left: 20px;
+}
+
+.photo-3 {
+	background: url(../img/power-rangers-moviev2.jpg) no-repeat center/contain;
+	height: 146px;
+	width: 100%;
+}
+
+.flex-1-3 span{
+	color: #e39e08;
+}
+
+.flex-1-3 hr {
+	width: 15%;
+	height: 1px;
+	background-color:  #e39e08;
+	border: 0;
+	margin: 5px 0px;
+}
+
+.double-box-right {
+	width: 47%;
+}
+
+.movie-list-10-items {
+	position: relative;
+	width: 540px;
+	background-color: #1a1a1a;
+	margin-bottom: 8px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.movie-list-10-items > div {
+	width: 35px;
+	height: 35px;
+	background-color: #cacaca;
+	color: #1d1d1d;
+	font-size: 1.2rem;
+	font-weight: 700;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.double-box-right div:nth-child(2) div {
+	background-color: #e39e08;
+}
+
+.double-box-right div:nth-child(3) div {
+	background-color: #d5a233;
+}
+
+.double-box-right div:nth-child(4) div {
+	background-color: #d0a955;
+}
+
+.movie-list-10-items a {
+	display: flex;
+	padding-left: 20px;
+}
+
+.movie-list-10-items a:after {
+	content: url(../img/expand-button.png);
+	position: absolute;
+	right: 2%;
+}
+
+/*SECTION COMMENTS */
+
+.header {
+	height: 90px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header button {
+	margin-left: 20px;
+}
+
+.comments-6-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.comments-1-6 {
+	display: flex;
+	position: relative;
+	margin-bottom: 30px;
+	flex-basis: 45%;
+}
+
+.user-photo {
+	position: relative;
+	height: 56px;
+	width: 56px;
+	background: url(../img/user-icon.png) no-repeat center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15px;
+	top: 12px;
+}
+
+.user-photo p {
+	position: absolute;
+	bottom: -40%;
+	height: 24px;
+	width: 65px;
+	color: #b3b3b3;
+	background-color: #4b4b4b;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-container {
+	margin-left: 30px;
+	width: 75%;
+	background-color: #f8f8f8;
+	padding: 15px;
+	position: relative;
+}
+
+.spec-list {
+	display: flex;
+	justify-content: space-around;
+	color: #b3b3b3;
+}
+
+.spec-list li:nth-child(1):before {
+	content: url(../img/two-documents.png);
+	margin-right: 10px;
+}
+
+.spec-list li:nth-child(2):before {
+	content: url(../img/at-sign.png);
+	margin-right: 10px;
+}
+
+.spec-list li:nth-child(3):before {
+	content: url(../img/not-allowed-symbol.png);
+	margin-right: 10px;
+}
+
+.text-container hr {
+	background-color: #e6e6e6;
+	border: 0;
+	height: 1px;
+	margin: 8px 0px;
+}
+
+.text-container p {
+	line-height: 1.3;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.triangle {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background-color: #f8f8f8;
+	transform: rotate(45deg);
+	top: 3%;
+	left: -2.2%;
+}
+
+/*BLACK LANE + 2 big box*/
+
+.black-lane {
+	height: 90px;
+	background-color: #1d1d1d;
+	margin-top: 40px;
+	margin-bottom: 140px;
+	position: relative;
+}
+
+.big-box-main {
+	display: flex;
+	justify-content: space-between;
+	color: #ffffff;
+	position: relative;
+	top: -40px;
+}
+
+.big-box-the-same-spec {
+	width: 545px;
+	height: 225px;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.big-box-flex-inside {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.big-box-the-same-spec h3 {
+	font-weight: 300;
+	font-size: 1.7rem;
+}
+
+.big-box-main button {
+	text-transform: lowercase;
+	margin-top: 25px;
+}
+
+.big-box-right {
+	background: url(../img/americanhustle1-op.png) no-repeat center;
+	position: relative;
+}
+
+.big-box-left {
+	background: url(../img/people-1-op.png) no-repeat center;
+	position: relative;
+}
+
+.big-box-icon-right {
+	background: url(../img/favorites.png) no-repeat center;
+	height: 50px;
+	width: 50px;
+	margin-right: 20px;
+}
+
+.big-box-icon-left {
+	background: url(../img/speech-bubble.png) no-repeat center;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+/*SECTION ADVERTISEMENT*/
+
+.advertisement {
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+	background-color: #eaeaea;
+	position: relative;
+}
+
+.advertisement p {
+	text-transform: uppercase;
+	color: #636363;
+}
+
+.advertisement p:nth-child(4) {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.advertisement p:last-child {
+	text-transform: inherit;
+}
+
+.advertisement hr {
+	width: 20px;
+	margin: 5px 0px;
+	background-color: #636363;
+}
+
+.triangle-left {
+	background: url(../img/triangle-left.png) no-repeat center;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+}
+
+.triangle-right {
+	background: url(../img/triangle-right.png) no-repeat center;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	right: 7px;
+	bottom: 7px;
+}
+
+/*SECTION RANK*/
+
+.small-box-3 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.small-box-1-3 {
+	height: 200px;
+}
+
+.small-box-first {
+	background-color: #1d1d1d;
+	width: 385px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.photos-container {
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 192px;
+	cursor: pointer;
+}
+
+.photos-container:hover {
+	background-color: #0f0f0f;
+	color: #e39e08;
+}
+
+.photos-container {
+	color: #fff;
+}
+
+.photos {
+	width: 35px;
+	height: 35px;
+}
+
+.photo-category-1 {
+	background: url(../img/speech-bubble.png) no-repeat center/contain;
+}
+
+.photo-category-2 {
+	background: url(../img/favorites.png) no-repeat center/contain;
+}
+
+.photo-category-3 {
+	background: url(../img/copy.png) no-repeat center/contain;
+}
+
+.photo-category-4 {
+	background: url(../img/video-camera.png) no-repeat center/contain;
+}
+
+.small-box-1-3 ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.small-box-1-3 li {
+	height: 35px;
+	width: 300px;
+	background-color: #eaeaea;
+	color: #3b3b3b;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.small-box-1-3 li:not(.last-li-item) {
+	margin-bottom: 5px;
+}
+
+.small-box-1-3 li:hover {
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+}
+ 
+.small-box-1-3 ul div {
+	font-weight: 700;
+	width: 35px;
+	height: 35px;
+	color: #000;
+	background-color: #cacaca;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.small-box-second, .small-box-third {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+/*SECTION FOOTER*/
+
+footer {
+	height: 300px;
+	background-color: #1c1c1c;
+}
+
+/*.flex-footer {
+	display: flex;
+	flex-direction: row;
+}*/
+
+.newsletter {
+	height: 230px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.newsletter h2 {
+	color: #e7e7e7;
+}
+
+.newsletter p {
+	color: #979797;
+	line-height: 1.4;
+}
+
+.newsletter input {
+	height: 70px;
+	width: 400px;
+	padding-left: 20px;
+	font-size: 1.3rem;
+
+}
+
+.newsletter .input-flex {
+display: flex;
+-ms-align-items: center;
+align-items: center;
+	margin-top: 25px;
+}
+
+.newsletter .send {
+	background: url(../img/send.png) no-repeat center;
+	width: 80px;
+	height: 70px;
+	background-color: #fff;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	margin-left: -3px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.copyright {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	color: #423f3f;
+}
+
+.copyright span {
+	font-weight: 700;
+}
